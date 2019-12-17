@@ -8,7 +8,9 @@ class Shoe
     @brand = brand
     
     if BRANDS.include?(brand) do
-      BRANDS.popBRANDS << brand
+      BRANDS.pop
+    else
+      BRANDS << brand
     end
   end
 
