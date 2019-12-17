@@ -6,9 +6,9 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
+    
     if BRANDS.include?(brand) do
-      BRANDS.pop
+      BRANDS.popBRANDS << brand
     end
   end
 
